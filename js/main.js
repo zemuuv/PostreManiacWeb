@@ -115,9 +115,9 @@ function initMetricsAnimation() {
 
   // Map each metric to its numeric value and suffix
   const metricsData = [
-    { value: 4.2, suffix: 'B' },  // $4.2B  (prefix handled in HTML)
+    { value: 8.5, suffix: 'B' },  // $4.2B  (prefix handled in HTML)
     { value: 3,   suffix: ' min' },
-    { value: 92,  suffix: '%' },
+    { value: 90,  suffix: '%' },
   ];
 
   const observer = new IntersectionObserver(
@@ -420,7 +420,6 @@ function initLightbox() {
     const img = images[currentIndex];
     lbImg.src        = img.src;
     lbImg.alt        = img.alt;
-    lbCaption.textContent = img.dataset.caption || img.alt;
     counter.textContent   = `${currentIndex + 1} / ${images.length}`;
     lbPrev.disabled  = currentIndex === 0;
     lbNext.disabled  = currentIndex === images.length - 1;

@@ -984,6 +984,19 @@ body {
   transition: box-shadow 0.2s;
 }
 
+.stat-source {
+  display: block;
+  margin-top: 6px;
+  font-size: 11px;
+  color: #999;
+  text-decoration: none;
+}
+
+.stat-source:hover {
+  color: #E89AB0;
+  text-decoration: underline;
+}
+
 .opp-reason:hover {
   box-shadow: var(--shadow-hover);
 }
